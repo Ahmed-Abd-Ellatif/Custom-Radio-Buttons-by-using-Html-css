@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+h2 {
+  color: #00cbcb;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.raido-buttons i {
+  font-size: 30px;
+  color: #c2c2c2;
+}
+
+.radio-btn {
+  border: 2px solid #eee;
+  padding: 10px;
+  width: 400px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.custom-radio input {
+  display: none;
+}
+.x {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-icon {
+  margin-right: 20px;
+}
+.item-text p {
+  color: #777;
+}
+.fa-check {
+  opacity: 0;
+}
+
+.custom-radio input:checked + .radio-btn {
+  border: 2px solid #00cbcb;
+}
+.custom-radio input:checked + .radio-btn .fa-check {
+  opacity: 1;
+  color: #00cbcb;
+}
+.custom-radio input:checked + .radio-btn .x .item-icon i {
+  color: #00cbcb;
+}
